@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NoxT</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('https://images.unsplash.com/photo-1600577916048-804c9191e36c?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  button {
+    padding: 30px 60px;
+    font-size: 24px;
+    background-color: #4285F4; /* Change button color here */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: background-color 0.3s;
+  }
+  button:hover {
+    background-color: #357ae8; /* Change button hover color here */
+  }
+</style>
+</head>
+<body>
+
+<button id="notesButton">NOTES</button>
+<button id="projectsButton">PROJECTS</button>
+<button id="assignmentsButton">ASSIGNMENTS</button>
+
+<script>
+  document.getElementById("notesButton").addEventListener("click", function() {
+    window.open("https://docs.google.com/forms/d/e/1FAIpQLSeSGJu4ff0U6UYy6FkC01bMsuhDXpMStpw4Z7begVDRBj0L4w/viewform?usp=sf_link", "_blank");
+  });
+
+  document.getElementById("projectsButton").addEventListener("click", function() {
+    window.open("https://docs.google.com/forms/d/e/1FAIpQLSdYrG22t1j0w90OpNHlwx4kVWUzd39eZN0vsMAGXozqgLiYUQ/viewform?usp=sf_link", "_blank");
+  });
+
+  document.getElementById("assignmentsButton").addEventListener("click", function() {
+    window.open("https://docs.google.com/forms/d/e/1FAIpQLSfDnzBjCVdZ5Rt2ylb-EFRGSduPgvCJ86Cc_NVM5EJximb8Fw/viewform?usp=sf_link", "_blank");
+  });
+</script>
+
+</body>
+</html>
